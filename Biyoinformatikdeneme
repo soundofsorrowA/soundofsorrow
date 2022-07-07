@@ -1,32 +1,36 @@
-# dna = "ATGCATGGCAAATTTGCGCTTAGTCATGCATGGCAAAagctaggctacgtcagtaatgacgtaa"
-# dna = dna.upper()
-# motif = input ("Bir motif giriniz")
-# if motif in dna:
-#     print("girilen motiften dna'da" , dna.count(motif) , "tane vardır.")
-# else:
-#         print("verilen motif yoktur")
+dna = "ATGCATGGCAAATTTGCGCTTAGTCATGCATGGCAAAagctaggctacgtcagtaatgacgtaa"
+dna = dna.upper()
+motif = input ("Bir motif giriniz")
+if motif in dna:
+    print("girilen motiften dna'da" , dna.count(motif) , "tane vardır.")
+else:
+        print("verilen motif yoktur")
 
-# dna = input("bir dizi giriniz")
-# if dna.startswith("ATG") and dna.endswith("TAA"):
-#     print("verdiğiniz parametrelere uygun bir dizidir.")
-# else:
-#     print("verdiğimiz parametrelere uygun bir dizi giriniz.")
+dna = input("bir dizi giriniz")
+if dna.startswith("ATG") and dna.endswith("TAA"):
+    print("verdiğiniz parametrelere uygun bir dizidir.")
+else:
+    print("verdiğimiz parametrelere uygun bir dizi giriniz.")
 
-# gc_oran= float (input("bir gc oranı giriniz."))
-# if gc_oran >=0.40:
-#     print("giridiğiniz gc oran geçerlidir.")
-# else:
-#     print("girdiğiniz gc oran değerini lütfen değiştiriniz.")
+gc_oran= float (input("bir gc oranı giriniz."))
+if gc_oran >=0.40:
+    print("giridiğiniz gc oran geçerlidir.")
+else:
+    print("girdiğiniz gc oran değerini lütfen değiştiriniz.")
 
 
-# dna = "ATGCATGGCAAATTTGCGCTTAGTCATGCATGGCAAAagctaggctacgtcagtaatgacgtaa"
-# dna = dna.upper()
-# print("verilen DNA dizisinde Adenin baz sayısı" , dna.count("A"))
-# print("verilen DNA dizisinde Timin baz sayısı" , dna.count("T"))
-# print("verilen DNA dizisinde Guanin baz sayısı" , dna.count("G"))
-# print("verilen DNA dizisinde Sitozin baz sayısı" , dna.count("C"))
+dna = "ATGCATGGCAAATTTGCGCTTAGTCATGCATGGCAAAagctaggctacgtcagtaatgacgtaa"
+dna = dna.upper()
+print("verilen DNA dizisinde Adenin baz sayısı" , dna.count("A"))
+print("verilen DNA dizisinde Timin baz sayısı" , dna.count("T"))
+print("verilen DNA dizisinde Guanin baz sayısı" , dna.count("G"))
+print("verilen DNA dizisinde Sitozin baz sayısı" , dna.count("C"))
 
-# dna = "ATGCATGGCAAATTTGCGCTTAGTCATGCATGGCAAAagctaggctacgtcagtaatgacgtaa"
-# dna1 = dna.upper()
-# print("verilen DNA dizisinin GC_oranı:" , dna1.count("G") , dna1.count("C")) / len(dna1)
-# print("verilen dna dizisini rna dizisi şeklinde yazılması:" , dna1.replace(("T") , ("U")))
+dna = "ATGCATGGCAAATTTGCGCTTAGTCATGCATGGCAAAagctaggctacgtcagtaatgacgtaa"
+dna1 = dna.upper()
+print("verilen DNA dizisinin GC_oranı:" , dna1.count("G") , dna1.count("C")) / len(dna1)
+print("verilen dna dizisini rna dizisi şeklinde yazılması:" , dna1.replace(("T") , ("U")))
+
+
+
+
