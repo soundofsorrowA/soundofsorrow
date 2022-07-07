@@ -1,5 +1,4 @@
 dna = "ATGCATGGCAAATTTGCGCTTAGTCATGCATGGCAAAagctaggctacgtcagtaatgacgtaa"
-dna = dna.upper()
 motif = input ("Bir motif giriniz")
 if motif in dna:
     print("girilen motiften dna'da" , dna.count(motif) , "tane vardır.")
@@ -7,6 +6,7 @@ else:
         print("verilen motif yoktur")
 
 dna = input("bir dizi giriniz")
+dna1 = dna.upper()
 if dna.startswith("ATG") and dna.endswith("TAA"):
     print("verdiğiniz parametrelere uygun bir dizidir.")
 else:
@@ -28,7 +28,7 @@ print("verilen DNA dizisinde Sitozin baz sayısı" , dna.count("C"))
 
 dna = "ATGCATGGCAAATTTGCGCTTAGTCATGCATGGCAAAagctaggctacgtcagtaatgacgtaa"
 dna1 = dna.upper()
-print("verilen DNA dizisinin GC_oranı:" , dna1.count("G") , dna1.count("C")) / len(dna1)
+print("verilen DNA dizisinin GC_oranı:" , (dna1.count("G") + dna1.count("C")) / len(dna1))
 print("verilen dna dizisini rna dizisi şeklinde yazılması:" , dna1.replace(("T") , ("U")))
 
 
