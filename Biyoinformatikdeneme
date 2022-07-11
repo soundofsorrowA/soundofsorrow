@@ -31,6 +31,43 @@ dna1 = dna.upper()
 print("verilen DNA dizisinin GC_oranı:" , (dna1.count("G") + dna1.count("C")) / len(dna1))
 print("verilen dna dizisini rna dizisi şeklinde yazılması:" , dna1.replace(("T") , ("U")))
 
+dna = "ATGCATGGCAAATTTGCGCTTAGTCATGCATGGCAAAagctaggctacgtcagtaatgacgtaa"
+reverse_complement = dna[::-1]
+for nukleotid in reverse_complement:
+    if nukleotid == "A":
+        print("T" , end="")
+    elif nukleotid == "T":
+        print("A" , end="")
+    elif nukleotid == "G":
+        print("C" , end="")
+    elif nukleotid == "C":
+        print("G" , end="")
+
+
+primer_dizisi = input("Bir primer dizisi giriniz")
+primer_dizisi1 = primer_dizisi.upper()
+dizi_uzunluğu = len(primer_dizisi1)
+GC_oran = float( (primer_dizisi1.count("G") + primer_dizisi1.count("C")) / dizi_uzunluğu)
+if dizi_uzunluğu >= 18 and dizi_uzunluğu <= 24 :
+    if GC_oran >= 0.40 and GC_oran <= 0.60:
+        print("Girdiğiniz primer dizisi uygundur.")
+else:
+    print("Girdiğinz primer dizisi uygun değildir.")
+
+
+# Bu kod da console olarak bir hata yok ama CAC nukleotidini 2 yazmada hata veriiyor bu problem çözülecek.
+dna = "ATGCACACGTTT"
+trinukleotidler = ["ATG","TGC","GCA",
+                  "ACA" , "ACG","CGT", "CAC",
+                  "GTT","TTT", "CAC"]
+hepsinin_sayisi ={}
+for trinukleotid in trinukleotidler:
+    sayi = dna.count(trinukleotid)
+    if sayi >0:
+        hepsinin_sayisi[trinukleotid] = sayi
+print(hepsinin_sayisi)
+
+
 
 
 
