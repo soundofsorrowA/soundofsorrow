@@ -35,7 +35,6 @@
 
 <br/>  
 
-![My Discord](https://discord-readme-badge.vercel.app/api?id=<320157051894366208>)
 
 ## Connect with me  
 <a href="https://linkedin.com/in/mbglab" target="_blank">
